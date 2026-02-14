@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-html body {
+html, body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
 }
@@ -13,13 +13,13 @@ html body {
   padding: 0;
 }
 
-.flexbox {
+.container__flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav {
+.nav__menu {
   list-style: none;
   display: flex;
   gap: 20px;
@@ -34,7 +34,7 @@ html body {
   color: #ff9900;
 }
 
-.buttons {
+.nav__button {
   display: flex;
   gap: 32px;
 }
