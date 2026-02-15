@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
 }
@@ -10,15 +11,20 @@ html, body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 15px;
 }
 
-.container__flex {
+/* HEADER */
+
+.flex-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.header {
+  padding: 15px 0;
+}
 .nav__menu {
   list-style: none;
   display: flex;
@@ -58,46 +64,57 @@ html, body {
   border: 4px solid #bcd0e5;
 }
 
+/* MAIN */
+
 .section_product {
   margin-top: 70px;
 }
 
-.text_title {
-  width: 500px;
+.flex__box {
+  gap: 26px;
 }
-.text_title h1 {
+
+.title__product h1 {
   font-size: 44px;
 }
 
-.text_title p {
+.title__product p {
   font-size: 18px;
   text-align: justify;
   line-height: 1.5;
   margin: 0;
 }
 
-.text_title .btn {
+.title__product .btn {
   margin-top: 20px;
   width: 180px;
   height: 50px;
 }
 
 .section_customers {
-  margin-top: 70px;
+  background-image: url(../assets/img/bg.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 74px;
 }
-.section_customers h2 {
-  font-size: 36px;
+
+.title__costomers {
+  margin: 100px 0 50px;
   text-align: center;
+}
+.title__costomers h2 {
+  font-size: 36px;
 }
 
 .list_item {
-  margin: 60px 0 70px;
   padding: 0;
   display: flex;
   gap: 40px;
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  margin-bottom: 70px;
 }
 
 .list_customers {
@@ -109,4 +126,68 @@ html, body {
   margin: 0 auto;
   width: 180px;
   height: 50px;
+}
+
+.section_design {
+  margin-top: 100px;
+}
+
+.title__design {
+  width: 532px;
+  height: 525px;
+}
+
+.title__design h2 {
+margin-top: 0;
+}
+
+.title__design p {
+  text-align: justify;
+  line-height: 1.5;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.list_design_item {
+  padding: 0;
+}
+
+.list_item_text {
+  list-style: none;
+}
+
+.section_managers {
+  margin-top: 100px;
+}
+
+.list_item_check {
+  padding: 0;
+}
+
+.list_card img {
+  width: 35px;
+  height: 35px;
+}
+
+.list_card {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.title__managers {
+  margin: 45px 0 45px;
+  width: 505px;
+  height: 424px;
+}
+
+.title__managers h2 {
+margin-top: 0;
+}
+
+.title__managers p {
+  text-align: justify;
+  line-height: 1.5;
+  margin: 0;
+  padding-bottom: 30px;
 }
